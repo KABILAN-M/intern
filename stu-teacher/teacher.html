@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Module</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#schedule-appointment">Schedule Appointment</a></li>
+                <li><a href="#approve-cancel-appointment">Approve/CANCEL Appointment</a></li>
+                <li><a href="#view-messages">View Messages</a></li>
+                <li><a href="#view-all-appointments">View All Appointments</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+        <section id="schedule-appointment">
+            <h2>Schedule Appointment</h2>
+            <form>
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" name="student-name"><br><br>
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date"><br><br>
+                <label for="appointment-time">Appointment Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time"><br><br>
+                <input type="submit" value="Schedule Appointment">
+            </form>
+        </section>
+        <section id="approve-cancel-appointment">
+            <h2>Approve/CANCEL Appointment</h2>
+            <form>
+                <label for="appointment-id">Appointment ID:</label>
+                <input type="number" id="appointment-id" name="appointment-id"><br><br>
+                <input type="submit" value="Approve Appointment">
+                <input type="submit" value="Cancel Appointment">
+            </form>
+        </section>
+        <section id="view-messages">
+            <h2>View Messages</h2>
+            <ul id="messages-list"></ul>
+        </section>
+        <section id="view-all-appointments">
+            <h2>View All Appointments</h2>
+            <ul id="appointments-list"></ul>
+        </section>
+        <section id="logout">
+            <h2>Logout</h2>
+            <form>
+                <input type="submit" value="Logout">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
