@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--link para a adição da folha de estilo "CSS" em javaScript -->
+
+  <title>PROJETO 05</title>
+</head>
+
+<body>
+  <div class="background">
+    <div class="calculator">
+      <!-- Calculadora, espaço principal -->
+      <p id="result"></p>
+      <!--identificador do resultado das operações -->
+      <table>
+        <!-- Tabela criada com a adição de botões e funções do javascript -->
+        <tr>
+          <td><button class="button">C</button></td>
+          <td><button class="button">&larr;</button></td>
+          <td><button class="button">.</button></td>
+          <td><button class="button">*</button></td>
+        </tr>
+        <tr>
+          <td><button class="button">7</button></td>
+          <td><button class="button">8</button></td>
+          <td><button class="button">9</button></td>
+          <td><button class="button">-</button></td>
+        </tr>
+        <tr>
+          <td><button class="button">4</button></td>
+          <td><button class="button">5</button></td>
+          <td><button class="button">6</button></td>
+          <td><button class="button">/</button></td>
+        <tr>
+          <td><button class="button">1</button></td>
+          <td><button class="button">2</button></td>
+          <td><button class="button">3</button></td>
+          <td rowspan="2"><button class="button" style="height: 100px;">+</button></td>
+        </tr>
+        <td colspan="2"><button class="button" style="width: 100px;">=</button></td>
+        <td><button class="button">0</button></td>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script> <!--  link do script javaScript na página HTML -->
+</body>
+
+</html>
